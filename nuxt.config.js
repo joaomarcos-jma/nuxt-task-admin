@@ -30,7 +30,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/axios'],
+  plugins: ['~/plugins/api', '~/plugins/interceptors'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -57,9 +57,7 @@ export default {
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    baseUrl: process.env.BASE_URL || 'http://127.0.0.1/api',
-  },
+  axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

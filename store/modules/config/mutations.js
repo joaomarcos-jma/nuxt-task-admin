@@ -5,5 +5,8 @@ const mutations = {
   SET_ALERT(state, value) {
     state.alert = value
   },
+  SET_AUTH(state, value) {
+    state.isLoggedIn = value
+  },
 }
 export default mutations

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="ma-2 mt-2 text-right">
-       <b-button pill variant="primary">Add</b-button>
+      <b-button pill variant="primary">Add</b-button>
       <b-button to="/" pill variant="outline-secondary">Go Back</b-button>
     </div>
     <b-container>
@@ -17,7 +17,6 @@
         :sort-desc.sync="sortDesc"
         :sort-direction="sortDirection"
         stacked="md"
-        show-empty
         small
       >
         <template #cell(name)="row"> {{ row.value }} {{ row.value }} </template>
@@ -95,6 +94,7 @@
 <script>
 import { mapState } from 'vuex'
 export default {
+  middleware: ['logged'],
   data() {
     return {
       fields: [

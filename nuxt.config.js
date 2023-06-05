@@ -10,6 +10,9 @@ export default {
   privateRuntimeConfig: {
     apiSecret: process.env.API_SECRET,
   },
+  router: {
+    middleware: ['auth'],
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-task-admin',

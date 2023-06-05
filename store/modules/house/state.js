@@ -1,6 +1,6 @@
 const state = () => ({
   entities: [],
-  pagination: {}
+  pagination: {},
 })
 
 export default state

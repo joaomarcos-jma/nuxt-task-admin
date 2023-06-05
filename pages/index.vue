@@ -16,11 +16,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
   display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  @include centered;
 }
 </style>

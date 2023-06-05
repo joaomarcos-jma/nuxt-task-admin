@@ -1,5 +1,3 @@
-// eslint-disable-next-line nuxt/no-cjs-in-config
-const StyleLintPlugin = require('stylelint-webpack-plugin')
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -64,14 +62,5 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    extend(config, { isDev, isClient }) {
-      // Stylelint
-      config.plugins.push(
-        new StyleLintPlugin({
-          syntax: 'scss', // eg. with options if you need SCSS ;-)
-        })
-      )
-    },
-  },
+  build: {},
 }
